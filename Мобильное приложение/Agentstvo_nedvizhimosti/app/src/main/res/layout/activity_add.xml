@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:id="@+id/сurrentDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="">
+    </TextView>
+    <Button android:id="@+id/timeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменить время"
+        android:onClick="setTime" />
+    <Button android:id="@+id/dateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Изменить дату"
+        android:onClick="setDate"  />
+    <EditText
+        android:id="@+id/EtYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Введите длительность (минут)"/>
+    <Spinner
+        android:id="@+id/SpType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Тип события">
+    </Spinner>
+    <EditText
+        android:id="@+id/EdComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="Введите комментарий"/>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_height="wrap_content"
+            android:text="Добавить"
+            android:onClick="add"
+            android:layout_width="match_parent" />
+</LinearLayout>
+</ScrollView>

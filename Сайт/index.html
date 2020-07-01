@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Агентство недвижимости</title>
+  <link href="css/Standart.css" rel="stylesheet"/>
+  <link href="css/table.css" rel="stylesheet"/>
+ </head>
+ <body>
+	<div class="tab">
+	  <button id="ControlStandart" class="tablinks" onclick="openControl(event, 'ControlSdelka')">Сделка</button>
+	  <button class="tablinks" onclick="openControl(event, 'ControlPredlosheniya')">Предложение</button>
+	  <button class="tablinks" onclick="openControl(event, 'ControlPotrebnosti')">Потребность</button>
+	</div>
+
+	<div id="ControlSdelka" class="tabcontent">
+		<select id="ComboBoxPredlosheniya" class="Combobox"></select>
+		<select id="ComboBoxPotrebnosti" class="Combobox"></select>
+		<div id="DIV1">
+			Cтоимость услуг для клиента-продавца:
+		</div>
+		<div id="DIV2">
+			Стоимость услуг для клиента-покупателя:
+		</div>
+		<div id="DIV5">
+			Размер отчислений компании:
+		</div>
+		<button id="ButtonSdelka" onclick="ButtonAddClick(event, '1')">Добавить</button>
+		<table id="tableSdelka"></table>
+	</div>
+
+	<div id="ControlPredlosheniya" class="tabcontent">
+		<div class="Parametr">
+			<!-- <button id="ButtonPredlosheniya" onclick="ButtonAddClick(event, '2')">Добавить</button> -->
+			<table id="tablePredlosheniya"></table>
+		</div>
+	</div>
+
+	<div id="ControlPotrebnosti" class="tabcontent">
+		<div class="Parametr">
+			<!-- <button id="ButtonPotrebnosti" onclick="ButtonAddClick(event, '3')">Добавить</button> -->
+			<table id="tablePotrebnosti"></table>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+ </body>
+</html>
